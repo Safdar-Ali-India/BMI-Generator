@@ -1,31 +1,99 @@
+/* Navigation Bar */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1a1a1a;
+    background-color: #333333;
     color: white;
-    padding: 20px 40px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: Arial, sans-serif;
+    padding: 15px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
+
 .newa {
-    margin-top: 120px;
-    margin-bottom: 120px;
-    margin-left: 50px;
     text-decoration: none;
-    border: 2px solid #1a1a1a;
-    padding: 15px 25px;
-    background-color: #333;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
     color: white;
     border-radius: 12px;
-    font-size: 16px;
     font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
 }
 
 .newa:hover {
-    background-color: #575757;
-    transform: scale(1.05);
+    background-color: white;
+    color: #333333;
+    transform: scale(1.1);
 }
 
+/* BMI Calculator Container */
+.container {
+    width: 500px;
+    background-color: #444444;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 50px auto;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+#height,
+#weight {
+    width: 90%;
+    padding: 10px;
+    margin: 15px auto;
+    display: block;
+    border: 2px solid #666666;
+    border-radius: 8px;
+    background-color: #555555;
+    color: white;
+    font-size: 16px;
+}
+
+/* Weight Guide */
+#weight-guide {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc;
+    text-align: center;
+}
+
+/* Results */
+#results {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    color: #00ff00;
+}
+
+/* Button */
+button {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 8px;
+    background-color: #00aaff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0088cc;
+    transform: scale(1.05);
+}
